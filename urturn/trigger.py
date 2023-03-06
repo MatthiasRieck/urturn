@@ -32,7 +32,7 @@ class TimeTrigger(Trigger):
         self.trigger_time = trigger_time
 
     def calculate_next_trigger(self):
-        now = datetime.utcnow().date()
+        now = datetime.utcnow()
         trigger_datetime = datetime(
             year=now.year,
             month=now.month,
